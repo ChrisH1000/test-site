@@ -2,17 +2,49 @@
 <html>
   <title>Test site</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
   <link rel="stylesheet" href="css/style.css"/>
   <body class="colored">
-    <section id="s1">
-      <p>
-        Hi there this is a test
-        A really good one!
-        
-      </p>
-    </section>
-    <section id="s2">
-      <p>what you want mofo! hey yeah Yeah yeah!! ohhhh lala</p>
-    </section>
+    <div class="container-fluid no-gutter" id="header">
+      <div class="col-md-12 no-gutter" id="toplinks">
+        <ul class="col-md-8 col-md-offset-2">
+          <li class="col-md-1"><a href="#">Site map</a></li>
+          <li class="col-md-1"><a href="#">Accessibility</a></li>
+          <li class="col-md-1"><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="col-md-12 no-gutter" id="logosearch">
+        <div class="col-md-8 col-md-offset-2"><img src="images/gov-logo.png" id="govlogo"/><img src="images/scsa-logo.png" id="scsalogo"/>
+          <div class="col-md-5" id="search">
+            <form class="form-inline">
+              <div class="form-group col-md-9">
+                <label class="sr-only" for="sbox"></label>
+                <input class="form-control" type="text" placeholder="Search" id="sbox"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label class="sr-only" for="sub"></label>
+                <button class="btn btn-default" type="submit" id="sub">Search</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 no-gutter" id="nav">
+        <div class="col-md-8 col-md-offset-2">
+          <ul class="nav nav-tabs">
+            <li class="active" role="presentation"><a href="#">The Authority</a></li>
+            <li role="presentation"><a href="#">Kindergarten to Year 10</a></li>
+            <li role="presentation"><a href="#">Years 11 and 12</a></li>
+          </ul>
+          <div id="loginout"><a href="#"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span> Login</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="main">
+      <section class="col-md-8 col-md-offset-2" id="content">
+        <h1 class="text-center">This is a test of the container</h1>
+      </section>
+    </div>
+    <script src="js/output.min.js"></script>
   </body>
 </html>

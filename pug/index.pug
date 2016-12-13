@@ -3,16 +3,54 @@ html
 	//- Mobile specific 
 	meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
 		
+	link(rel="stylesheet" href="css/bootstrap.css")
 	link(rel="stylesheet" href="css/style.css")
 
 	body.colored
 
-		section#s1
+		div#header.container-fluid.no-gutter
+			div#toplinks.col-md-12.no-gutter
+				ul.col-md-8.col-md-offset-2
+					li.col-md-1
+						a(href="#") Site map
+					li.col-md-1
+						a(href="#") Accessibility
+					li.col-md-1
+						a(href="#") Contact us
 
-			p.
-				Hi there this is a test
-				A really good one!
+			div#logosearch.col-md-12.no-gutter
+				div.col-md-8.col-md-offset-2
+					img(src="images/gov-logo.png")#govlogo
+					img(src="images/scsa-logo.png")#scsalogo
 
-		section#s2
+					div#search.col-md-5
+						form.form-inline
+							div.form-group.col-md-9
+								label(for="sbox").sr-only
+								input(type="text" placeholder="Search")#sbox.form-control
+							div.form-group.col-md-3
+								label(for="sub").sr-only
+								button(type="submit")#sub.btn.btn-default Search
 
-			p what you want mofo! hey yeah Yeah yeah!! ohhhh lala
+			div#nav.col-md-12.no-gutter
+				div.col-md-8.col-md-offset-2
+					ul.nav.nav-tabs
+						li(role="presentation").active
+							a(href="#") The Authority
+						li(role="presentation")
+							a(href="#") Kindergarten to Year 10
+						li(role="presentation")
+							a(href="#") Years 11 and 12
+
+					div#loginout
+						a(href="#") #[span(aria-hidden="true").glyphicon.glyphicon-lock] Login
+							
+
+				
+
+		
+		div#main.container-fluid
+			section#content.col-md-8.col-md-offset-2
+				h1.text-center This is a test of the container
+		
+		script(src="js/output.min.js")

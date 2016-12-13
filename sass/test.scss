@@ -1,22 +1,84 @@
+$c1: #5e5e5e;
+$c2: #efefef;
+
 .colored {
-	background-color: #CCC;
+	background-color: $c2;
 
-	#s1 {
-		width: 700px;
+	#header {
 		background-color: #FFF;
-		margin: 0 auto;
-		display: flex;
-		column-count: 2;
-	}
+		margin-top: 0px;		
 
-	#s2 {
-		width: 700px;
-		background-color: #FFF;
-		margin: 0 auto;
+		#toplinks {
+			background-color: $c1;
+			border-bottom: 1px solid #EEE;
 
-		p {
-			color: red;
-			background-color: #000;
+			ul {
+				list-style: none;
+
+				li {
+					float: right;
+					text-align: right;
+					border-right: 1px solid #EEE;
+
+					a {
+						margin-right: 3px;
+					}
+				}				
+			}
+		}
+
+		#logosearch {
+			background-color: $c1;
+			min-height: 100px;
+
+			div {
+				position: relative;
+
+				img {
+					display: inline-block;					
+				}
+
+				#govlogo {
+					margin: -30px 30px 0 0;
+				}
+
+				#search {
+					position: absolute;
+					right: 0px;
+					top: 20px;
+				}
+			}
+		}
+
+		#nav {
+			background-color: $c1;
+			padding-top: 20px;
+			position: relative;
+
+			#loginout {
+				position: absolute;
+				right: 0px;
+				top: 20px;
+			}
 		}
 	}
+
+	#main {
+		background-color: red;
+
+		#content {
+			background-color: #FFF;
+
+			h1 {
+				font-size: 40px;
+			}
+		}
+	}
+}
+
+/*----- utility styles ------*/
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
 }

@@ -7,7 +7,7 @@ module.exports = function(grunt) {
 		    },
 		    files: {
 		      'production/css/style.css': 'sass/test.scss',
-		      'production/css/bootstrap.css': 'bower_components/sass-bootstrap/lib/bootstrap.scss'
+		      //'production/css/bootstrap.css': 'bower_components/sass-bootstrap/lib/bootstrap.scss'
 		    }
 		  }
 		},
@@ -22,7 +22,7 @@ module.exports = function(grunt) {
 		  clean: {
 		    files: {
 		      'production/css/style.css': 'production/css/style.css',
-		      'production/css/bootstrap.css': 'production/css/bootstrap.css'
+		      //'production/css/bootstrap.css': 'production/css/bootstrap.css'
 		    }
 		  }
 		},
@@ -93,7 +93,8 @@ module.exports = function(grunt) {
  	//grunt.loadNpmTasks('grunt-express');
  	grunt.loadNpmTasks('grunt-browser-sync');
 
- 	grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'pug', 'uglify']);
+ 	//grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'pug', 'uglify']);
+ 	grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'pug']);
  	//grunt.registerTask('start', ['express', 'watch']);
  	grunt.registerTask('start', ['browserSync', 'watch']);
 };
